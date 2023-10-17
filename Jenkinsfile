@@ -3,8 +3,8 @@ pipeline{
     stages{
         stage("getting code") {
             steps {
-                git url: 'https://github.com/tahamediouni1/devops.git', branch: 'master',
-                credentialsId: 'DevopsTP2' //jenkins-github-creds
+                git url: 'https://github.com/tahamediouni1/tpdevops.git', branch: 'main',
+                credentialsId: 'github-credentials' //jenkins-github-creds
                 sh "ls -ltr"
             }
         }
